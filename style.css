@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7928785;
+}
+#main img{
+    height: 560px;
+    width: 400px;
+   position: relative;
+   z-index: 90;
+   object-fit: cover;
+   animation-name: imagee;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+#scroll-div{
+    position: absolute;
+    top: 23%;
+    width: 100%;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+#scroll-div h1{
+    display: inline-block;
+    font-size: 127px;
+    text-transform: uppercase;
+    margin-right: 20px;
+    letter-spacing: 1px;
+    animation-name: scroll;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#scroll-div::-webkit-scrollbar{
+    display: none;
+}
+
+
+#scroll-div2{
+    position: absolute;
+    top: 38%;
+    width: 100%;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+    z-index: 99;
+
+}
+#scroll-div2 h1{
+    display: inline-block;
+    font-size: 127px;
+    text-transform: uppercase;
+    margin-right: 20px;
+    letter-spacing: 1px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    color: transparent;
+    animation-name: scroll;
+    animation-duration: 2s;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#scroll-div2::-webkit-scrollbar{
+    display: none;
+}
+
+
+#scroll-div3{
+    position: absolute;
+    top: 53%;
+    width: 100%;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+#scroll-div3 h1{
+    display: inline-block;
+    font-size: 127px;
+    text-transform: uppercase;
+    margin-right: 20px;
+    letter-spacing: 1px;
+    animation-name: scroll;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#scroll-div3::-webkit-scrollbar{
+    display: none;
+}
+
+#text{
+    font-size: 27px;
+    position: absolute;
+    width: 40%;
+    font-weight: 900;
+    /* background-color: yellow; */
+    z-index: 999;
+    text-align: center;
+    top: 15%;
+    text-transform: uppercase;
+}
+
+@keyframes scroll {
+    0%{
+        transform: translateX(calc(-100% - 22px));
+            /* - 20px isliy dia h qki 20px margin right dia h ...to css m calc k andr hi likhna pdta h pura */
+    /* and element thodi si space khudse le hi leta h isliy 2px add krke 22px dedia */
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+#side-text{
+    font-size: 15px;
+    width: 16.5%;
+    text-align: start;
+    bottom:15%;
+    font-weight: 800;
+    /* background-color: red; */
+    position: absolute;
+    color: rgba(0, 0, 0, 0.762);
+}
+/* @keyframes imagee {
+    0%{
+       rotate: -20deg;
+    }
+    30%{
+
+        rotate: -20deg;
+    }
+    60%{
+        rotate: 20deg;
+    }
+    100%{
+        rotate: -20deg;
+    }
+} */
+
+/* @keyframes imagee {
+    0%{
+        opacity: 50%;
+        rotate: -20deg;
+    }
+    100%{
+        opacity: 100%;
+        rotate: -40deg;
+    }
+} */
+/* @keyframes imagee {
+    0%{
+        scale: 100%;
+    }
+    100%{
+        scale: 105%;
+    }
+} */
+
